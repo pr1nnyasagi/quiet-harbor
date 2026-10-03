@@ -587,7 +587,7 @@ export default function App() {
         >
           <Mark />
           <span>
-            SALPAKAN<span className="brand-sub">GAME OF THE GENERALS</span>
+            VEILED COMMAND<span className="brand-sub">HIDDEN-RANK STRATEGY</span>
           </span>
         </a>
         <nav>
@@ -622,7 +622,7 @@ export default function App() {
         <main className="home">
           <section className="home-copy">
             <div className="eyebrow">
-              <span className="tiny-line" /> THE CLASSIC FILIPINO STRATEGY GAME
+              <span className="tiny-line" /> A BATTLE OF STRATEGY AND SECRECY
             </div>
             <h1>
               Every move
@@ -1121,10 +1121,10 @@ export default function App() {
       <footer>
         <div>
           <Mark small />
-          <span>A Filipino classic. A new battlefield.</span>
+          <span>Every rank concealed. Every move decisive.</span>
         </div>
         <span>
-          STRATEGY OVER CHANCE <span className="footer-dot">·</span> EST. 1970
+          STRATEGY OVER CHANCE <span className="footer-dot">·</span> VEILED COMMAND
         </span>
         <button onClick={() => setRules(true)}>
           How to play <ArrowUpRight size={13} />

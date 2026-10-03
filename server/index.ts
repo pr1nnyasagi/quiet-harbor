@@ -15,5 +15,5 @@ if (process.env.NODE_ENV !== "production") {
   app.get("/{*path}", (_req, res) => res.sendFile(resolve("dist/index.html")));
 }
 http.listen(Number(process.env.PORT) || 3000, "0.0.0.0", () =>
-  console.log("Salpakan is ready on port", process.env.PORT || 3000),
+  console.log("VEILED COMMAND is ready on port", process.env.PORT || 3000),
 );
