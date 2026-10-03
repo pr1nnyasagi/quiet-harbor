@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: salpakan
+    name: quiet-harbor-api
     runtime: node
     plan: free
     buildCommand: npm ci --include=dev && npm run build

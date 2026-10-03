@@ -1,11 +1,11 @@
-# Salpakan — Game of the Generals
+# VEILED COMMAND
 
-A new interface for the classic Filipino game: a dark strategy table, sage and brass pieces, a private-room lobby, and an uncluttered command center. Two friends play online without accounts.
+A two-player strategy game of hidden ranks, instinct, and deception. A dark strategy table, sage and brass pieces, a private-room lobby, and an uncluttered command center set the battlefield. Two friends play online without accounts.
 
 ## Features
 
 - Private six-character room codes and invite links.
-- 21-piece armies on the official 9 × 8 board, with arbitrary formations in three home rows.
+- 21-piece armies on a 9 × 8 board, with arbitrary formations in three home rows.
 - Click a piece and a square to rearrange or swap; shuffle and reset formations.
 - Server validates deployment, turns, movement, and challenges.
 - Enemy ranks and deployment are concealed; IDs are random and do not encode rank.
@@ -58,11 +58,11 @@ Render's free service may sleep when idle. The first connection can take time to
 
 The build uses relative asset paths so project Pages URLs work. Room invitations use query parameters, avoiding SPA route rewrites. Changing the backend URL requires rebuilding the frontend. The Pages workflow deliberately runs only on manual request; pushes run quality checks without publishing anything.
 
-## Rules and references
+## How to play
 
-Rules follow [Wikipedia's Game of the Generals description](https://en.wikipedia.org/wiki/Game_of_the_Generals), including all five general ranks and mobile flags. The creator of a new room takes the first move; rematches alternate the first player. Both players may agree to a draw. No clocks or automatic repetition draws are imposed.
+Deploy your army in secret, then take turns moving one piece one square horizontally or vertically. Challenge an enemy piece to resolve a battle: higher ranks win, equal ranks both fall, and spies defeat officers but lose to privates. Capture the enemy flag to win. Or bring your own flag to the farthest row: you win immediately if no enemy is adjacent, otherwise survive the opponent's next move.
 
-The [gab-cat/games-of-the-generals](https://github.com/gab-cat/games-of-the-generals) project was reviewed as a reference. Salpakan's application code, interface, and game engine were written independently; no code or artwork was copied from it.
+The creator of a new room takes the first move; rematches alternate the first player. Both players may agree to a draw. No clocks or automatic repetition draws are imposed.
 
 ## Architecture and limits
 
@@ -80,4 +80,4 @@ The page uses Google Fonts for DM Sans and Manrope, with local sans-serif fallba
 
 ## License
 
-MIT; see `LICENSE`. Game of the Generals was invented by Sofronio H. Pasola Jr. This is an independent digital adaptation, with no affiliation implied.
+MIT; see `LICENSE`.
