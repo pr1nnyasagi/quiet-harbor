@@ -242,7 +242,7 @@ export function createGameServer(allowedOrigin?: string) {
       const { room, side } = seatedRoom();
       if (room.game.phase !== "playing")
         throw new Error("There is no active battle to resign.");
-      finish(room.game, other(side), "Opponent resigned");
+      finish(room.game, other(side), "Battle ended by resignation");
       broadcast(room);
       return { ok: true };
     });
